@@ -12,3 +12,9 @@ def selection_sort(ArrayValue):
 
         #Swapping Lowest Value to Current Position
         ArrayValue[i], ArrayValue[cur_min_idx] = ArrayValue[cur_min_idx], ArrayValue[i]
+        print("Current Position: ", i)
+        print("Array Value", ArrayValue)
+
+ArrayValue = [67, 77, 47, 15, 1, 25, 59, 46, 8, 87]
+selection_sort(ArrayValue)
+print(ArrayValue)
