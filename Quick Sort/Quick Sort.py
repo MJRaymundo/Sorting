@@ -7,7 +7,7 @@ def QuickSort(ArrayValue, Left, Right):
     if Left < Right:
         PartitionPosition = Partition(ArrayValue, Left, Right)
         QuickSort(ArrayValue, Left, PartitionPosition - 1)
-        QuickSort(ArrayValue, Left, PartitionPosition + 1)
+        QuickSort(ArrayValue, PartitionPosition + 1, Right)
 
 def Partition(ArrayValue, Left, Right):
     i = Left
@@ -29,6 +29,6 @@ def Partition(ArrayValue, Left, Right):
 
 
 ArrayValue = [67, 77, 47, 15, 1, 25, 59, 46, 8, 87]
-QuickSort(ArrayValue, 0 , len(ArrayValue) - 1)
+QuickSort(ArrayValue, 0, len(ArrayValue) - 1)
 
 print("Final Array Value",ArrayValue)
