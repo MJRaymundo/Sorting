@@ -3,7 +3,7 @@
 #Given Array Values: 67, 77, 47, 15, 1, 25, 59, 46, 8, 87
 #Source: https://www.youtube.com/watch?v=ee80YmiaSVQ&list=PLliXbzY3XhUSJy3izXH-0ojiT3Uup8xbu&index=2
 
-def selection_sort(ArrayValue):
+def SelectionSort(ArrayValue):
     for i in range(0, len(ArrayValue) - 1):
         cur_min_idx = i
         for j in range (i + 1, len(ArrayValue)):
@@ -16,5 +16,5 @@ def selection_sort(ArrayValue):
         print("Array Value", ArrayValue)
 
 ArrayValue = [67, 77, 47, 15, 1, 25, 59, 46, 8, 87]
-selection_sort(ArrayValue)
+SelectionSort(ArrayValue)
 print(ArrayValue)
