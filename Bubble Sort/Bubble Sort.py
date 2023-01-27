@@ -14,4 +14,4 @@ def BubbleSort(ArrayValue):
 ArrayValue = [67, 77, 47, 15, 1, 25, 59, 46, 8, 87]
 BubbleSort(ArrayValue)
 
-print(BubbleSort)
+print(ArrayValue)
