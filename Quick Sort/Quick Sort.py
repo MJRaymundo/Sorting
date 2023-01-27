@@ -6,6 +6,10 @@
 def QuickSort(ArrayValue, Left, Right):
     if Left < Right:
         PartitionPosition = Partition(ArrayValue, Left, Right)
+        QuickSort(ArrayValue, Left, PartitionPosition - 1)
+        QuickSort(ArrayValue, Left, PartitionPosition + 1)
+        
+def Partition(ArrayValue, Left, Right):
 
 
 ArrayValue = [67, 77, 47, 15, 1, 25, 59, 46, 8, 87]
