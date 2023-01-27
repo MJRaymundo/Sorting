@@ -10,7 +10,8 @@ def InsertionSort(ArrayValue):
             #Swapping Values
             ArrayValue[j-1], ArrayValue[j] = ArrayValue[j], ArrayValue[j-1]
             j -= 1
-            
+        print("Position of Array Value being sorted: ", i)
+        print("Array Value", ArrayValue)
 
 ArrayValue = [67, 77, 47, 15, 1, 25, 59, 46, 8, 87]
 InsertionSort(ArrayValue)
