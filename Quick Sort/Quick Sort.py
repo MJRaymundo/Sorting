@@ -19,12 +19,20 @@ def Partition(ArrayValue, Left, Right):
             i += 1
         while j > Left and ArrayValue[j] >= Pivot:
             j -= 1
-        #Swapping Positions
+        #Swapping j and i element if they didn't cross
         if i < j:
             ArrayValue[i], ArrayValue[j] = ArrayValue[j], ArrayValue[i]
-    #Swapping Positions
+        print("Pivot: ", Pivot)
+        print("i element: ", ArrayValue[i])
+        print("j element: ", ArrayValue[j])
+        print("Current Array Value: ", ArrayValue)
+    #Swapping i and pivot if j and i crossed
     if ArrayValue[i] > Pivot:
         ArrayValue[i], ArrayValue[Right] = ArrayValue[Right], ArrayValue[i]
+    print("Pivot: ", Pivot)
+    print("j element: ", ArrayValue[j])
+    print("New Pivot Value: ", ArrayValue[Right])
+    print("Current Array Value: ", ArrayValue)
     return i
 
 
