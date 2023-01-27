@@ -30,7 +30,6 @@ def Partition(ArrayValue, Left, Right):
     if ArrayValue[i] > Pivot:
         ArrayValue[i], ArrayValue[Right] = ArrayValue[Right], ArrayValue[i]
     print("Pivot: ", Pivot)
-    print("j element: ", ArrayValue[j])
     print("New Pivot Value: ", ArrayValue[Right])
     print("Current Array Value: ", ArrayValue)
     return i

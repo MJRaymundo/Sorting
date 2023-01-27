@@ -7,10 +7,13 @@ def MergeSort(ArrayValue):
     if len(ArrayValue) > 1:
         LeftArrayValue = ArrayValue[:len(ArrayValue)//2]
         RightArrayValue = ArrayValue[len(ArrayValue)//2:]
-
+        print("Left: ", ArrayValue)
+        print("Right: ", RightArrayValue)
+        
         #Recursion
         MergeSort(LeftArrayValue)
         MergeSort(RightArrayValue)
+
 
         #Merge
         i = 0 #LeftArrayValue idx
