@@ -12,6 +12,7 @@ def BubbleSort(ArrayValue):
                 Temp = ArrayValue[j]
                 ArrayValue[j] = ArrayValue[j+1]
                 ArrayValue[j+1] = Temp
+            print("Step:", j + 1, " Array Value", ArrayValue)
         print("Iteration: ", 10 - i)
         print("Array Value", ArrayValue)
 
