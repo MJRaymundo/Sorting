@@ -23,8 +23,8 @@ def Partition(ArrayValue, Left, Right):
         if i < j:
             ArrayValue[i], ArrayValue[j] = ArrayValue[j], ArrayValue[i]
         print("Pivot: ", Pivot)
-        print("i element: ", ArrayValue[i])
-        print("j element: ", ArrayValue[j])
+        print("i element: ", ArrayValue[j])
+        print("j element: ", ArrayValue[i])
         print("Current Array Value: ", ArrayValue)
     #Swapping i and pivot if j and i crossed
     if ArrayValue[i] > Pivot:
