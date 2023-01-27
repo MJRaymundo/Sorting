@@ -33,6 +33,7 @@ def MergeSort(ArrayValue):
             ArrayValue[k] = RightArrayValue[j]
             j+=1
             k+=1
+        print("Left Array Value/s: ", LeftArrayValue,"Right Array Value/s: ", RightArrayValue,"Current Array Value/s: ", ArrayValue)
 
 ArrayValue = [67, 77, 47, 15, 1, 25, 59, 46, 8, 87]
 MergeSort(ArrayValue)
