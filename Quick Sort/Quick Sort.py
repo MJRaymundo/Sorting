@@ -29,6 +29,6 @@ def Partition(ArrayValue, Left, Right):
 
 
 ArrayValue = [67, 77, 47, 15, 1, 25, 59, 46, 8, 87]
-QuickSort(ArrayValue)
+QuickSort(ArrayValue, 0 , len(ArrayValue) - 1)
 
 print("Final Array Value",ArrayValue)
